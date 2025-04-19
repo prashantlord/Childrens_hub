@@ -11,7 +11,6 @@
 
 body {
   font-family: var(--font-family-primary);
-
 }
 
 /* Nav Bar */
@@ -51,8 +50,6 @@ header#head {
   a {
     color: var(--color-text);
   }
-
- 
 
   .nav-links {
     display: flex;
@@ -237,8 +234,17 @@ section#one {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin-bottom: 1.25rem;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      transition: var(--transition-transform);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 
   .discount-tag {
