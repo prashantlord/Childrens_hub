@@ -1,0 +1,170 @@
+@import url(../CSS/Root.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-family-primary), var(--font-family-fallback);
+}
+
+/* Nav Bar */
+
+
+  header#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+  
+    height: 5rem;
+    border-bottom: 0.0625rem solid #ddd;
+  
+    .navbar {
+      display: flex;
+      width: 75rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9375rem 1.875rem;
+  
+      background-color: #fff;
+    }
+  
+    .logo {
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-xl);
+      color: var(--text-color);
+  
+      &::first-letter {
+        color: var(--color-primary-dark);
+      }
+    }
+  
+    a {
+        color: var(--color-text);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.875rem;
+      list-style: none;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      color: var(--color-text);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-bold);
+      transition: var(--transition-colors);
+  
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  
+    .nav-links a.active {
+      color: var(--color-primary);
+    }
+  
+    .cart-icon i {
+      font-size: var(--font-size-lg);
+    }
+  
+    #bag {
+      cursor: pointer;
+      transition: var(--transition-colors);
+  
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+  
+
+/* Main Body */
+main#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10vh);
+  width: 100%;
+
+
+.form-container {
+  background-color: var(--color-background);
+  width: 400px;
+  padding: 30px 20px 20px;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-xl);
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tab-header button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color-text-light);
+}
+
+.tab-header button.active {
+  color: var(--color-primary);
+
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.form-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: var(--font-size-lg);
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--color-primary);
+  border: none;
+  padding: 12px;
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition-colors);
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}
+}
