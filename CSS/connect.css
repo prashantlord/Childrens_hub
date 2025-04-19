@@ -148,9 +148,19 @@ main {
     gap: 20px;
     background: var(--color-background);
     padding: 20px;
+    display: flex;
+    align-items: center;
     border-radius: 12px;
     box-shadow:var(--card-shadow);
     margin-bottom: 40px;
+    
+
+    img {
+      width: 30%;
+      height: 100%;
+    
+    }
+
   }
 
   .featured-post .author-badge {
