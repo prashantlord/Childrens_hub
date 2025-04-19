@@ -95,8 +95,9 @@ section#one {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../Images/back.jpg);
+  background-image: url(../Images/back.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
   .hero-content {
@@ -171,6 +172,15 @@ section#two {
     height: 5rem;
     border-radius: var(--border-radius-full);
     margin: 0 auto 0.9375rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      transform: scale(0.2);
+      height: auto;
+      
+    }
   }
 
   .toys {
@@ -255,16 +265,20 @@ section#three {
     align-items: start;
     margin-bottom: 1.25rem;
     overflow: hidden;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    transition: var(--transition-transform);
 
-    &:hover {
-      transform: scale(1.1);
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: var(--transition-transform);
+    
+  
+      &:hover {
+        transform: scale(1.1);
+        
+      }
     }
   }
+  
 
   .discount-tag {
     position: absolute;
@@ -375,18 +389,20 @@ section#three {
   .image-box {
     flex: 1 1 31.25rem;
     background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
+    
     height: 18.75rem;
     border-radius: var(--border-radius-md);
+    overflow: hidden;
+
+    img{
+        transform: translateY(-6rem);
+        width: 100%;
+    }
   }
 
-  .image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--border-radius-sm);
-  }
+  
 }
 
 /* Section Five */
@@ -438,8 +454,11 @@ section#three {
   .avatar {
     width: 2.25rem;
     height: 2.25rem;
-    background-color: #f0f0f0;
+    background-color: var(--color-secondary-dark);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
