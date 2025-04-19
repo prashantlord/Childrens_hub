@@ -273,7 +273,7 @@
         if (scrollPos >= track.scrollWidth / 2) {
           scrollPos = 0;
         }
-        track.style.transform = `translateX(-RS {scrollPos}px)`;
+        track.style.transform = `translateX(-${scrollPos}px)`;
         requestAnimationFrame(animate);
       }
 
