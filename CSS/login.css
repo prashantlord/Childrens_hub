@@ -12,7 +12,8 @@
 body {
   font-family: var(--font-family-primary), var(--font-family-fallback);
 }
-#menu {
+#menu,
+#sideBar {
   display: none;
 }
 /* Nav Bar */
@@ -94,7 +95,8 @@ main#main {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 10vh);
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   height: 100vh;
 
   .form-container {
@@ -167,6 +169,32 @@ main#main {
       background-color: var(--color-primary-dark);
     }
   }
+
+  aside#sideBar {
+    display: none;
+    cursor: auto;
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    z-index: 998;
+
+    .box1 {
+      width: 50vw;
+      height: 100vh;
+      border: 1px solid black;
+      padding: 1rem;
+      background-color: var(--color-background);
+
+      ul li {
+        list-style-type: none;
+        margin: 0.3rem;
+        font-size: var(--font-size-xl);
+        line-height: 3.4rem;
+      }
+    }
+  }
 }
 
 @media (width <=688px) {
@@ -174,7 +202,8 @@ main#main {
   .cart-icon {
     display: none;
   }
-  header#head nav.navbar #menu {
+  header#head nav.navbar #menu,
+  #sideBar {
     display: block;
     cursor: pointer;
     font-size: var(--font-size-xl);

@@ -354,6 +354,31 @@ section#three {
     background-color: var(--color-primary);
   }
 }
+aside#sideBar {
+  display: none;
+  cursor: auto;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 998;
+
+  .box1 {
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: var(--color-background);
+
+    ul li {
+      list-style-type: none;
+      margin: 0.3rem;
+      font-size: var(--font-size-xl);
+      line-height: 3.4rem;
+    }
+  }
+}
 
 /* Section Four */
 .four {
@@ -633,11 +658,11 @@ section#three {
   }
 }
 
-@media (width <=390px) {
+/* @media (width <=390px) {
   section#one .hero-content h1 {
-    font-size: var(--font-size-xl);
+    font-size: --font;
   }
   section#one .hero-content p {
     font-size: var(--font-size-xs);
   }
-}
+} */

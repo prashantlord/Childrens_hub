@@ -52,6 +52,32 @@ body {
     text-align: center;
   }
 }
+
+aside#sideBar {
+  display: none;
+  cursor: auto;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 998;
+
+  .box1 {
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: var(--color-background);
+
+    ul li {
+      list-style-type: none;
+      margin: 0.3rem;
+      font-size: var(--font-size-xl);
+      line-height: 3.4rem;
+    }
+  }
+}
 /* Nav Bar */
 
 header#head {

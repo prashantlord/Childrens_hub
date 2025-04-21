@@ -31,6 +31,16 @@
     </header>
 
     <main id="main">
+      <aside id="sideBar">
+        <div class="box1">
+          <ul>
+            <a href="index.html"><li>Home</li> </a>
+            <a href="HTML/product.html"><li>Product</li> </a>
+            <a href="HTML/connect.html"><li>Connect</li> </a>
+            <a href="HTML/login.html"><li>Login</li> </a>
+          </ul>
+        </div>
+      </aside>
       <section id="one">
         <div class="hero-content">
           <h1>Caring for Your Little One, Every Step of the Way.</h1>
@@ -157,7 +167,7 @@
             </p>
           </div>
           <div class="image-box">
-        
+            <img src="Images/about.png" alt="Children's Hub" />
           </div>
         </div>
       </section>
@@ -291,6 +301,19 @@
       }
 
       animate();
+
+      const menuBtn = document.getElementById("menu");
+      const sideBar = document.getElementById("sideBar");
+      let side = false;
+      menuBtn.addEventListener("click", () => {
+        if (side === false) {
+          sideBar.style.display = "flex";
+          side = true;
+        } else {
+          sideBar.style.display = "none";
+          side = false;
+        }
+      });
     </script>
   </body>
 </html>
