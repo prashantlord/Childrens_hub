@@ -66,15 +66,20 @@ aside#sideBar {
   .box1 {
     width: 50vw;
     height: 100vh;
-    border: 1px solid black;
+    box-shadow: var(--shadow-xl);
     padding: 1rem;
     background-color: var(--color-background);
 
     ul li {
+      color: var(--color-text);
       list-style-type: none;
       margin: 0.3rem;
-      font-size: var(--font-size-xl);
-      line-height: 3.4rem;
+      font-size: var(--font-size-base);
+      line-height: 3rem;
+      transition: var(--transition-colors);
+      &:hover {
+        color: var(--color-primary);
+      }
     }
   }
 }
