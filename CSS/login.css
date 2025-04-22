@@ -16,6 +16,7 @@ body {
 #sideBar {
   display: none;
 }
+
 /* Nav Bar */
 
 header#head {
@@ -53,10 +54,35 @@ header#head {
   a {
     color: var(--color-text);
   }
+
+  .nav-links .ul li a.active {
+    color: var(--color-primary);
+  }
+
   .nav-links {
     display: flex;
     gap: 1.875rem;
     list-style: none;
+  }
+
+  .nav-links li {
+    position: relative;
+
+    transition: 0.3s;
+  }
+
+  .nav-links li::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-full);
+    bottom: -10%;
+    transition: width 0.3s ease;
+  }
+  .nav-links li:hover::before {
+    width: 100%;
   }
 
   .nav-links a {
@@ -199,6 +225,7 @@ main#main {
       }
     }
   }
+}
 
 @media (width <=688px) {
   header#head nav.navbar ul.nav-links,

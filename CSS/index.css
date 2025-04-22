@@ -59,6 +59,25 @@ header#head {
     gap: 1.875rem;
     list-style: none;
   }
+  .nav-links li {
+    position: relative;
+
+    transition: 0.3s;
+  }
+
+  .nav-links li::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-full);
+    bottom: -10%;
+    transition: width 0.3s ease;
+  }
+  .nav-links li:hover::before {
+    width: 100%;
+  }
 
   .nav-links a {
     text-decoration: none;
@@ -76,14 +95,16 @@ header#head {
     color: var(--color-primary);
   }
 
+  
+
   .cart-icon i {
     font-size: var(--font-size-lg);
   }
 
   #cart-icon {
     cursor: pointer;
-    transition: var(--transition-colors);
-    font-size: var(--font-size-2xl);
+    transition: var(--transition-colors); 
+    font-size: var(--font-size-lg);
 
     &:hover {
       color: var(--color-primary);
