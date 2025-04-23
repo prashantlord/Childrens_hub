@@ -104,12 +104,12 @@ header#head {
     transition: var(--transition-colors);
 
     &:hover {
-      color: var(--color-primary);
+      color: var(--color-primary-dark);
     }
   }
 
   .nav-links a.active {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
   }
 
   
@@ -204,7 +204,7 @@ section#two {
   }
 
   .category-card {
-    var(--shadow-custom-lg)
+   
     display: flex;
     flex-direction: column;
     justify-content: center;

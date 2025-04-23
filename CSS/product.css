@@ -174,12 +174,12 @@ header#head {
     transition: var(--transition-colors);
 
     &:hover {
-      color: var(--color-primary);
+      color: var(--color-primary-dark);
     }
   }
 
   .nav-links a.active {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
   }
 
   .cart-icon i {
