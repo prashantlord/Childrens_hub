@@ -140,10 +140,10 @@ main#main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 10vh);
+  height: calc(100vh - 15vh);
   width: 100vw;
   overflow: hidden;
-  height: 100vh;
+  
 
   .form-container {
     background-color: var(--color-background);
@@ -261,5 +261,11 @@ main#main {
 
   main .form-container {
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body main .form-container {
+    margin: 0 1rem;
   }
 }
